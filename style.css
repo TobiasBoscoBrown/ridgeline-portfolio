@@ -830,6 +830,54 @@ footer {
 .salomon-header { background: linear-gradient(135deg, #1a1f2e, #0f1318); border: 1px solid rgba(46,82,125,0.3); }
 .grundens-header { background: linear-gradient(135deg, #1a2428, #0f1518); border: 1px solid rgba(46,105,125,0.3); }
 .badlands-header { background: linear-gradient(135deg, #2a1e12, #1a1108); border: 1px solid rgba(125,82,46,0.3); }
+.marmot-header { background: linear-gradient(135deg, #1e1a2e, #110f18); border: 1px solid rgba(100,82,125,0.3); }
+.marsupial-header { background: linear-gradient(135deg, #2a1f12, #1a1308); border: 1px solid rgba(125,100,46,0.3); }
+.humangear-header { background: linear-gradient(135deg, #1a2828, #0f1818); border: 1px solid rgba(46,125,120,0.3); }
+
+.ai-callout-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: rgba(46,125,82,0.08);
+  border: 1px solid rgba(46,125,82,0.25);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin-bottom: 28px;
+}
+
+.ai-badge {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  color: var(--green);
+  background: rgba(46,125,82,0.2);
+  border: 1px solid rgba(46,125,82,0.5);
+  border-radius: 4px;
+  padding: 4px 8px;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.ai-callout-banner p {
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.ai-callout-banner p strong { color: var(--green); }
+
+.ai-block {
+  border-color: rgba(46,125,82,0.2) !important;
+  background: rgba(46,125,82,0.03) !important;
+}
+
+.channel-priority.ai-tag {
+  background: rgba(46,125,82,0.2);
+  color: var(--green);
+}
 
 .roadmap-brand-name {
   font-family: var(--font-display);
