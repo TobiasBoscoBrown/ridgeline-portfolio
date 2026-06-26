@@ -13,6 +13,16 @@ document.getElementById('hamburger').addEventListener('click', () => {
   document.querySelector('.nav-links').classList.toggle('open');
 });
 
+// Brand roadmap tabs
+document.querySelectorAll('.brand-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.brand-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.brand-roadmap').forEach(r => r.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('brand-' + tab.dataset.brand).classList.add('active');
+  });
+});
+
 // Close menu on link click
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
